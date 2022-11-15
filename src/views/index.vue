@@ -424,8 +424,6 @@
         </div>
       </div>
     </div>
-    <extras></extras>
-    <qa></qa>
     <setting></setting>
   </div>
 </template>
@@ -439,9 +437,7 @@ import shopPanel from './component/shopPanel'
 import reinPanel from './component/reincarnationPanel'
 import strengthenEquipment from './component/strengthenEquipment'
 import dungeons from './component/dungeons'
-import extras from './component/extras'
 import setting from './component/setting'
-import qa from './component/qa'
 import cTooltip from './uiComponent/tooltip'
 import { assist } from '../assets/js/assist';
 import { Base64 } from 'js-base64';
@@ -490,7 +486,7 @@ export default {
       debounceTime: {},  //防抖计时器
     };
   },
-  components: { weaponPanel, armorPanel, ringPanel, neckPanel, dungeons, backpackPanel, shopPanel, cTooltip, strengthenEquipment, extras, qa, setting, reinPanel },
+  components: { weaponPanel, armorPanel, ringPanel, neckPanel, dungeons, backpackPanel, shopPanel, cTooltip, strengthenEquipment, setting, reinPanel },
   created() {
     // 窗口自适应
     window.onresize = () => {
